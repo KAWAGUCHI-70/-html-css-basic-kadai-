@@ -1,0 +1,42 @@
+/* Div(名前～血液型)箇所の設定 */
+#basic{
+  font-family: "Arial","Meiryo",sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+/*文字がブルーの箇所*/
+.blue, #basic > .blue{      
+  font-family: "Arial","Meiryo",sans-serif;
+  font-size: 40px; 
+  color: skyblue;
+  text-align: center;
+}
+/*文字がピンクの箇所*/
+.pink, #basic > .pink{
+  font-family: "Arial","Meiryo",sans-serif;
+  font-size: 40px; 
+  color: rgb(255,192,203);
+  text-align: center;
+}
+
+/* h1のWEBフォント設定 */
+#google-fonts{
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+  /* h1フォント装飾の設定 */
+  font-size: 40px;
+  letter-spacing: 1.2em;
+  text-shadow: 2px 2px 4px gray;
+  border-bottom: solid 3px rgb(115,115,114);
+  text-align: center;
+}
+/* 趣味～プログラミングを始めた理由まで */
+.like{
+  font-family: "Arial","Meiryo",sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
