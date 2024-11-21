@@ -8,14 +8,12 @@
 /*文字がブルーの箇所*/
 .blue, #basic > .blue{      
   font-family: "Arial","Meiryo",sans-serif;
-  /* font-size: 20ex;  */
   color: skyblue;
   text-align: center;
 }
 /*文字がピンクの箇所*/
 .pink, #basic > .pink{
   font-family: "Arial","Meiryo",sans-serif;
-  
   color: rgb(255,192,203);
   text-align: center;
 }
