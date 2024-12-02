@@ -1,0 +1,99 @@
+
+/* 初期化 */
+body,h1,p{
+  margin: 0px; /*上下左右のmarginを０にする。*/
+}
+
+/* ヘッダーの設定 */
+header{
+  margin-top: 0px;
+  margin-bottom: 20px; /*下の余白は２０*/
+  text-align: center;
+  background-color: rgb(244,79,79); /*背景*/
+  color: rgb(255, 255, 255); /*文字色*/
+  
+}
+ /* メインタグの設定 */
+main{
+  margin: 10px; /*要素内の上下左右の余白を１０にする。*/
+}
+/* 親要素の指定 */
+ #parent{
+  display: flex;
+  justify-content: space-around;
+
+}
+/* pタグのみフォントサイズを２０にする設定 */
+#parent > p { 
+  font-size:20px;
+  
+}
+
+/* mainのcontentsの設定 */
+.contents{
+  padding: 10px,15px;
+  margin: 20px,0px;
+  text-align: center;
+  border: solid 3px rgb(238,204,204);
+  flex-basis: 25%; 
+} 
+/* ｈ２のフォントサイズと下線を設定 */
+ .contents > h2{
+  font-size: 25px;
+  border-bottom:dotted 3px rgb(236, 122,122);
+  
+} 
+/* ｈ２の前に●をつけてピンクにする */
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+
+}
+
+ /* 傘の文字を太字で青にする */
+.contents p:nth-last-of-type(1)::first-letter{
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+  
+}
+/* イメージ画像の指定 */
+.contents > img{
+  width: 70%;
+  height: auto;
+  margin:10px,0px;
+  
+}
+
+/* フッターの指定 */
+footer {
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+
+a { /*フォントサイズとカラーを指定*/
+  font-size: 20px;
+  color: rgb(255,255,255) ;
+}
+a:visited{ /*訪問済みリンクの色を変化*/
+  color: rgb(193,234,251);
+}
+
+a:hover{ /*マウスカーソルが乗ると色が変化*/
+  color: rgb(245,178,178);
+}
+
+
+/* 画面幅768以下になったらフォントサイズと並びを変更 */
+@media screen and (max-width:768px){
+  h2{
+      font-size: 30px;
+  }
+  p{
+    font-size: 25px;
+  }
+
+  #parent {
+    display: block;
+  }
+
+} 
