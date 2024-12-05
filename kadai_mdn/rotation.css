@@ -1,0 +1,5 @@
+/* 要素を回転させて表示する */
+.rotation{
+  transform: rotate(45deg);
+
+}
